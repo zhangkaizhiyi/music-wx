@@ -1,0 +1,12 @@
+<view class="my-zone">
+    <view class="my-zone-info">
+        <image src="{{userInfo.avatar}}" mode="cover" class="my-zone-cover"></image>
+        <text class="text">{{userInfo.name}}</text>
+    </view>
+    <view class="switch">
+        <text class="text {{isFav?'':'active'}}">我的最爱</text>
+        <text class="text {{isFav?'active':''}}">播放历史</text>
+    </view>
+    <view class="favirate"></view>
+    <view class="history"></view>
+</view>

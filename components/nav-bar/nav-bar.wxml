@@ -1,0 +1,8 @@
+<!--components/nav-bar/nav-bar.wxml-->
+<view class="nav-bar">
+    <navigator url="../my-zone/my-zone" class="title">My-Zone</navigator>
+    <navigator url="../index/index" class="nav-item {{title==='index'?'active':''}}">首页</navigator>
+    <navigator url="../search/search" class="nav-item {{title==='search'?'active':''}}" >搜索</navigator>
+    <navigator url="../rank/rank" class="nav-item {{title==='rank'?'active':''}}" >排行</navigator>
+    <navigator url="../singer/singer" class="nav-item {{title==='singer'?'active':''}}">歌手</navigator>
+</view>

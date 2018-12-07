@@ -1,0 +1,14 @@
+<view class="song-list">
+    <view class="song-wrapper">
+        <view class="song-item" wx:for="{{songs}}" wx:key="song_id">
+            <view class="cover">
+                <image src="{{item.pic_s500}}" mode="widthFix"></image>
+            </view>
+            <view class="info">
+                <text class="text">歌曲名:{{item.title}}</text>
+                <text class="text small">专辑名:{{item.album_title}}</text>
+                <text class="text small">作者:{{item.author}}</text>
+            </view>
+        </view>
+    </view>
+</view>

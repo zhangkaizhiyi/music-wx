@@ -1,0 +1,19 @@
+<!--pages/singer-detail/singer-detail.wxml-->
+<view class="singer-detail">
+    <view class="banner">
+        <view class="cover">
+            <image src="{{cover}}" mode="widthFix"></image>
+        </view>
+        <view class="title">
+            <text class="text">{{title}}</text>
+        </view>
+    </view>
+    <scroll-view class="song-list" scroll-y >
+        <block wx:for="{{list}}" wx:key="id">
+            <view class="song-item"  bindtap="toPlayer" data-index="{{index}}">
+                <text class="text">{{item.name}}</text>
+                <text class="text">专辑:{{item.album}}</text>
+            </view>
+        </block>
+    </scroll-view>
+</view>

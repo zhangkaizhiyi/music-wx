@@ -1,0 +1,80 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.1",
+	"appid": "wxea756ffe520079ed",
+	"projectname": "%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 5,
+			"list": [
+				{
+					"id": -1,
+					"name": "歌手页面",
+					"pathName": "pages/singer/singer",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "歌手详情页",
+					"pathName": "pages/singer-detail/singer-detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "播放列表",
+					"pathName": "pages/player/player",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人页面",
+					"pathName": "pages/my-zone/my-zone",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的空间",
+					"pathName": "pages/my-zone/my-zone",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "排行页面",
+					"pathName": "pages/rank/rank"
+				}
+			]
+		}
+	}
+}

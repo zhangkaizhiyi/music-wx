@@ -1,0 +1,24 @@
+.my-zone {
+    padding: 20px;
+}
+.my-zone .my-zone-cover{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.switch .text {
+    color: #919191;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #535353;
+    text-align: center;
+}
+.switch .active {
+    color:white;
+}

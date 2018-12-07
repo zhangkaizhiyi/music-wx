@@ -1,0 +1,7 @@
+<!--pages/rank/rank.wxml-->
+<view class="rank" class="text">
+    <nav-bar title="rank"></nav-bar>
+    <text >请输入文字</text>
+    <input placeholder="请输入文字" bindinput="input"/>
+    <text class="text">{{query}}</text>
+</view>

@@ -1,0 +1,4 @@
+<!--pages/search/search.wxml-->
+<view class="search">
+    <nav-bar title="search"></nav-bar>
+</view>

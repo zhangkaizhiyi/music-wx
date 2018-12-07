@@ -1,0 +1,33 @@
+/* components/mini-player/mini-player.wxss */
+.mini-player{
+    position: fixed;
+    top: 100px;
+    left: 200px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+.mini-player .player-top .cover {
+    width: 80px;
+    height: 80px;
+}
+.mini-player .player-top .cover image{
+    border-radius: 50%;
+}
+.mini-player .player-bottom .control{
+}
+.cd-play {
+    animation: rotate 20s linear infinite
+}
+.cd-pause {
+    animation-play-state: paused
+}
+/*旋转动画*/
+@keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}

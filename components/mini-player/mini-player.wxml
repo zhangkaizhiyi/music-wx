@@ -1,0 +1,15 @@
+<!--components/mini-player/mini-player.wxml-->
+<view class="mini-player"
+      style="transform: translate3d({{moveX}}px,{{moveY}}px,0)"
+      wx:if="{{currentSong.id}}"
+      bind:tap="toPlayer"
+      bind:touchstart="touchStart"
+      catch:touchmove="touchMove"
+      catch:touchend="touchEnd"
+>
+    <view class="player-top">
+        <view class="cover {{playing? 'cd-play':'cd-play cd-pause'}}">
+            <image src="{{currentSong.cover}}" mode="widthFix"></image>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,28 @@
+.song-wrapper {
+    padding: 20 rpx;
+}
+.song-wrapper .song-item{
+    width: 100%;
+    height: 200rpx;
+    background-color: black;
+    margin-bottom: 10rpx;
+    display: flex;
+}
+
+.song-wrapper .song-item .cover{
+    flex : 0 0 200rpx;
+    width: 200rpx;
+    margin-left: 10px;
+}
+.song-wrapper .song-item .info {
+    flex: 1;
+    color: white;
+    margin-left: 10px;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+}

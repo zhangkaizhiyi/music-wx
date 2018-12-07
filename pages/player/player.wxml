@@ -1,0 +1,28 @@
+<!--pages/player/player.wxml-->
+<view class="player">
+    <view class="bg">
+        <image src="{{currentSong.cover}}"></image>
+    </view>
+    <view class="filter"></view>
+    <view class="header">
+        <text class="title">{{currentSong.name}}</text>
+    </view>
+    <view class="cover {{playing? 'cd-play':'cd-play cd-pause'}}">
+        <image src="{{currentSong.cover}}" mode="widthFix"></image>
+    </view>
+    <view class="progress">
+        <text class="text">{{time}}</text>
+        <progress percent="{{percent}}"  border-radius="3" stoke-width="2" activeColor="#919191"  backgroundColor="#190428">
+            <view class="dot" style="left:{{2*percent}}px"></view>
+        </progress>
+        <text class="text">{{duration}}</text>
+    </view>
+    <view class="control">
+        <icon class="iconfont icon-random"></icon>
+        <icon class="iconfont icon-previous {{canplay? '':'disabled'}}" bindtap="prev"></icon>
+        <icon class="iconfont icon-play {{canplay? '':'disabled'}}" wx:if="{{!playing}}" bindtap="togglePlay"></icon>
+        <icon class="iconfont icon-stop {{canplay? '':'disabled'}}" wx:else bingtap="togglePlay" bindtap="togglePlay"></icon>
+        <icon class="iconfont icon-next {{canplay? '':'disabled'}}" bindtap="next"></icon>
+        <icon class="iconfont icon-menu"></icon>
+    </view>
+</view>

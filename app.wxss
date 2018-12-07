@@ -1,0 +1,100 @@
+/**app.wxss**/
+page {
+    background-color: #190428;
+}
+.header {
+    width: 100%;
+    height: 100rpx;
+    color:white;
+    display: flex;
+    align-items: center;
+    padding: 10rpx;
+    box-sizing: border-box;
+    margin-bottom: 20rpx;
+}
+image {
+    width: 100%;
+}
+.text {
+    font-size: 30rpx;
+    color: white;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.big {
+    font-size: 40rpx;
+    font-weight: 700;
+}
+.small {
+    font-size: 20rpx;
+}
+.list-item {
+    display:flex;
+    width: 100%;
+    height: 50px;
+}
+.list-item image {
+    width: 100%;
+}
+.list-item .info {
+    flex: 1;
+    display:flex;
+    align-items: center;
+    color:#fff;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 945945 */
+    src: url('//at.alicdn.com/t/font_945945_68e6a3gqhbc.eot');
+    src: url('//at.alicdn.com/t/font_945945_68e6a3gqhbc.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_945945_68e6a3gqhbc.woff') format('woff'),
+    url('//at.alicdn.com/t/font_945945_68e6a3gqhbc.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_945945_68e6a3gqhbc.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    color:white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play:before { content: "\e600"; }
+
+.icon-menu:before { content: "\e648"; }
+
+.icon-xiangqu:before { content: "\e64c"; }
+
+.icon-geren:before { content: "\e657"; }
+
+.icon-sousuo:before { content: "\e693"; }
+
+.icon-tupian:before { content: "\e695"; }
+
+.icon-fenxiang:before { content: "\e6a5"; }
+
+.icon-pinglun:before { content: "\e6ad"; }
+
+.icon-bianji:before { content: "\e6b0"; }
+
+.icon-gerenfill:before { content: "\e6c5"; }
+
+.icon-xiangqufill:before { content: "\e6cd"; }
+
+.icon-zanfill:before { content: "\e6ce"; }
+
+.icon-dangdi:before { content: "\e6d7"; }
+
+.icon-next:before { content: "\e649"; }
+
+.icon-previous:before { content: "\e64a"; }
+
+.icon-random:before { content: "\e6e8"; }
+
+.icon-stop:before { content: "\e656"; }
+
+
+

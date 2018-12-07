@@ -1,0 +1,39 @@
+.song-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rpx 35rpx;
+  justify-content: space-between;
+}
+.swiper {
+  width: 100%;
+  height: 500rpx;
+  margin: 10px;
+}
+.song-item{
+  position: relative;
+  width: 320rpx;
+  margin-bottom: 10rpx;
+}
+.song-item image {
+  width: 100%;
+  border-radius: 5%;
+}
+/*歌曲名*/
+.song-item .item-content {
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+  width: 200rpx;
+  height: 100rpx;
+  padding: 10rpx;
+  /*background-color: rgba(0,0,0,.5);*/
+  overflow: hidden;
+}
+.song-item .item-content .text {
+  color: #190428;
+  font-size: 20rpx;
+  line-height: 30rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,19 @@
+<!--pages/singer/singer.wxml-->
+<view class="singer">
+    <nav-bar title="singer"></nav-bar>
+    <view class="singer-list">
+        <view class="list-item" wx:for="{{singerList}}" wx:key="singer_id" bindtap="toSingerDetail"
+              data-id="{{item.singer_mid}}"
+              data-cover="{{item.singer_pic}}"
+              data-title="{{item.singer_name}}"
+        >
+            <view class="cover">
+                <image src="{{item.singer_pic}}" mode="widthFix"></image>
+            </view>
+            <view class="info">
+                <text>{{item.singer_name}}</text>
+            </view>
+        </view>
+    </view>
+    <mini-player playlist="{{playlist}}" playing="{{playing}}" index="{{index}}" currentSong="{{currentSong}}"></mini-player>
+</view>

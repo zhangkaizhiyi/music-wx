@@ -1,0 +1,21 @@
+<view class="index">
+  <nav-bar title="index"></nav-bar>
+  <swiper indicator-dots autoplay="{{autoplay}}" class="swiper" interval="3000">
+    <block>
+      <swiper-item wx:for="{{slider}}" wx:key="index">
+        <image src="{{item}}" mode="widthFix"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="song-list">
+    <view class="song-item" wx:for="{{result}}" wx:key="type" bindtap="gotoSongList" data-type="{{item.type}}" data-title="{{item.name}}">
+      <image src="{{item.pic_s192}}" mode="widthFix"></image>
+      <scroll-view class="item-content" scroll-y>
+        <view class="text" wx:for="{{item.content}}" wx:for-item="song" wx:key="song_id" bindtap="toPlayer">
+          {{song.title}}
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <mini-player currentSong="{{currentSong}}" playing="{{playing}}" playlist="{{playlist}}"></mini-player>
+</view>
